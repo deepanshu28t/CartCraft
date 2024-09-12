@@ -17,8 +17,7 @@ function Allproducts() {
 
   const addCart = (product)=> {
       dispatch(addToCart(product));
-      toast.success('add to cart');
-
+      toast.success("Item Added to cart");
   }
 
   useEffect(() => {
@@ -50,14 +49,14 @@ function Allproducts() {
                                         <img className=" rounded-2xl w-full h-80 p-2 hover:scale-110 transition-scale-110  duration-300 ease-in-out" src={imageUrl} alt="blog" />
                                     </div>
                                     <div className="p-5 border-t-2">
-                                        <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{ color: mode === 'dark' ? 'white' : '', }}>E-Bharat</h2>
+                                        <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{ color: mode === 'dark' ? 'white' : '', }}>CartCraft</h2>
                                         <h1 className="title-font text-lg font-medium text-gray-900 mb-3" style={{ color: mode === 'dark' ? 'white' : '', }}>{title}</h1>
                                         {/* <p className="leading-relaxed mb-3">{item.description.}</p> */}
                                         <p className="leading-relaxed mb-3" style={{ color: mode === 'dark' ? 'white' : '' }}>₹{price}</p>
                                         <div className=" flex justify-center">
                                             <button type="button" 
                                             onClick={()=> addCart(item)}
-                                            className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
+                                            className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add to Cart</button>
 
                                         </div>
                                     </div>

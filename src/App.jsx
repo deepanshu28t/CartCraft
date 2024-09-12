@@ -1,10 +1,6 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 import Home from './pages/home/Home';
 import Order from './pages/order/Order';
@@ -78,9 +74,9 @@ export const ProtectedRoute = ({children}) => {
 const ProtectedRouteForAdmin = ({children})=> {
   const admin = JSON.parse(localStorage.getItem('user'))
   
-  if(admin.user.email === 'knupadhyay784@gmail.com'){
+  if(admin.user.email === 'tyagideepu5@gmail.com'){
     return children
-  }
+  } 
   else{
     return <Navigate to={'/login'}/>
   }

@@ -63,7 +63,7 @@ function Cart() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",
+        theme: "colored", 
       })
     }
 
@@ -80,15 +80,15 @@ function Cart() {
           year: "numeric",
         }
       )
-    }
+    } 
 
     var options = {
-      key: "",
-      key_secret: "",
+      key: "rzp_test_YglTrCvT9aCL2B",
+      key_secret: "IRa53pzZq1LOH5wR5t0haVrO",
       amount: parseInt(grandTotal * 100),
       currency: "INR",
       order_receipt: 'order_rcptid_' + name,
-      name: "E-Bharat",
+      name: "CartCraft",
       description: "for testing purpose",
       handler: function (response) {
         console.log(response)

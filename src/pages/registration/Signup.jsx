@@ -24,7 +24,7 @@ function Signup() {
         try {
             const users = await createUserWithEmailAndPassword(auth, email, password);
 
-            // console.log(users)
+             console.log(users)
 
             const user = {
                 name: name,
@@ -41,7 +41,7 @@ function Signup() {
             setLoading(false)
             
         } catch (error) {
-            console.log(error)
+            console.log(error) 
             setLoading(false)
         }
     }

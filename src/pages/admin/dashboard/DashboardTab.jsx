@@ -101,7 +101,7 @@ function DashboardTab() {
                                                         <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap">
                                                             <img className='w-16' src={imageUrl} alt="img" />
                                                         </th>
-                                                        <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                                         <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                             {title}
                                                         </td>
                                                         <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
